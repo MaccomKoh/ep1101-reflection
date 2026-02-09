@@ -2031,3 +2031,278 @@ body {
         background: white;
     }
 }
+
+/* ================================
+   LAPTOP OPTIMIZATION (15-inch and similar)
+   ================================ */
+
+/* Standard Laptops: 1366px - 1600px */
+@media (min-width: 1024px) and (max-width: 1600px) {
+    
+    /* Landing Page Adjustments */
+    .hero-title {
+        font-size: clamp(2.5rem, 5vw, 3.5rem) !important;
+    }
+    
+    .hero-subtitle {
+        font-size: clamp(1rem, 2.5vw, 1.25rem) !important;
+    }
+    
+    .start-btn {
+        padding: 0.875rem 1.75rem !important;
+        font-size: 1rem !important;
+    }
+    
+    .quick-nav {
+        max-width: 800px !important;
+    }
+    
+    .nav-card {
+        padding: 1rem !important;
+    }
+    
+    .card-icon {
+        font-size: 1.75rem !important;
+    }
+    
+    /* Reduce floating circles size */
+    .circle-1 { width: 400px; height: 400px; }
+    .circle-2 { width: 320px; height: 320px; }
+    .circle-3 { width: 240px; height: 240px; }
+    .circle-4 { width: 280px; height: 280px; }
+    
+    /* Container and Spacing */
+    .container {
+        max-width: 1000px !important;
+        padding: 2rem 1.5rem !important;
+    }
+    
+    /* Page Headers */
+    .page-header {
+        margin-bottom: 2rem !important;
+    }
+    
+    .page-header h1 {
+        font-size: clamp(1.75rem, 4vw, 2.25rem) !important;
+    }
+    
+    .header-icon {
+        font-size: 3rem !important;
+    }
+    
+    /* Section Titles */
+    .section-title {
+        font-size: 1.5rem !important;
+        gap: 0.5rem !important;
+    }
+    
+    .title-icon {
+        font-size: 1.75rem !important;
+    }
+    
+    /* Cards */
+    .card {
+        padding: 1.5rem !important;
+    }
+    
+    .card-header h3 {
+        font-size: 1.25rem !important;
+    }
+    
+    .lead-text {
+        font-size: 1rem !important;
+    }
+    
+    /* Role Cards */
+    .role-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+    }
+    
+    .role-card {
+        height: 220px !important;
+    }
+    
+    .role-icon {
+        font-size: 2.5rem !important;
+    }
+    
+    .role-front h3 {
+        font-size: 1.125rem !important;
+    }
+    
+    /* Feature Grid */
+    .feature-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+    }
+    
+    .feature-icon {
+        font-size: 1.75rem !important;
+    }
+    
+    .feature-box h4 {
+        font-size: 0.9375rem !important;
+    }
+    
+    /* Gibbs Cycle */
+    .gibbs-cycle {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+    
+    .gibbs-stage {
+        padding: 1rem !important;
+    }
+    
+    .stage-icon {
+        font-size: 1.75rem !important;
+    }
+    
+    .stage-name {
+        font-size: 0.8125rem !important;
+    }
+    
+    /* Quote Boxes */
+    .quote-icon {
+        font-size: 3rem !important;
+    }
+    
+    .quote-text {
+        font-size: 1rem !important;
+    }
+    
+    /* Emotion Meter */
+    .emotion-icon {
+        font-size: 1.75rem !important;
+    }
+    
+    /* Timeline */
+    .timeline-content h4 {
+        font-size: 0.9375rem !important;
+    }
+    
+    /* Learning Summary */
+    .summary-number {
+        width: 40px !important;
+        height: 40px !important;
+        font-size: 1.25rem !important;
+    }
+    
+    .summary-content h4 {
+        font-size: 1rem !important;
+    }
+    
+    /* Lesson Cards */
+    .lessons-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    }
+    
+    .lesson-icon {
+        font-size: 2.5rem !important;
+    }
+    
+    .lesson-header h3 {
+        font-size: 1rem !important;
+    }
+    
+    /* Transformation Box */
+    .transformation-box {
+        padding: 1.5rem !important;
+    }
+    
+    .transform-icon {
+        font-size: 3rem !important;
+    }
+    
+    .transform-title {
+        font-size: 1.125rem !important;
+    }
+    
+    .arrow-icon {
+        font-size: 2.5rem !important;
+    }
+    
+    /* Skills Showcase */
+    .skill-name {
+        font-size: 0.8125rem !important;
+    }
+    
+    /* Application Cards */
+    .application-icon {
+        font-size: 2.5rem !important;
+    }
+    
+    .application-card h3 {
+        font-size: 1rem !important;
+    }
+    
+    /* Meta Lesson */
+    .meta-title {
+        font-size: clamp(1.5rem, 3vw, 2rem) !important;
+    }
+    
+    .meta-subtitle {
+        font-size: 1rem !important;
+    }
+    
+    /* Closing Card */
+    .closing-icon {
+        font-size: 3rem !important;
+    }
+    
+    .closing-content h2 {
+        font-size: 1.75rem !important;
+    }
+    
+    /* Navigation Buttons */
+    .nav-btn {
+        padding: 0.875rem 1.25rem !important;
+        font-size: 0.9375rem !important;
+    }
+    
+    /* Navbar */
+    .nav-brand {
+        font-size: 1rem !important;
+    }
+    
+    .nav-links a {
+        font-size: 0.8125rem !important;
+        padding: 0.5rem 0.875rem !important;
+    }
+}
+
+/* Smaller Laptops: 1024px - 1365px (like some teachers might have) */
+@media (min-width: 1024px) and (max-width: 1365px) {
+    
+    .hero-title {
+        font-size: clamp(2rem, 5vw, 3rem) !important;
+    }
+    
+    .container {
+        max-width: 900px !important;
+        padding: 1.75rem 1.25rem !important;
+    }
+    
+    .page-header h1 {
+        font-size: clamp(1.5rem, 4vw, 2rem) !important;
+    }
+    
+    .section-title {
+        font-size: 1.375rem !important;
+    }
+    
+    .gibbs-cycle {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    
+    .role-grid,
+    .feature-grid,
+    .lessons-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+/* Extra protection for very zoomed views */
+@media (min-width: 1024px) and (max-width: 1440px) and (min-resolution: 120dpi) {
+    body {
+        zoom: 0.9;
+    }
+}
