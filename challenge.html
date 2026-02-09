@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Challenge | EP1101 Reflection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">
+            <span class="code-icon">💻</span>
+            <span>EP1101 Reflection</span>
+        </a>
+        <div class="nav-links">
+            <a href="intro.html">Introduction</a>
+            <a href="challenge.html" class="active">Challenges</a>
+            <a href="insights.html">Insights</a>
+            <a href="reflection.html">Reflection</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Page Header -->
+        <header class="page-header fade-in">
+            <div class="header-icon">🎯</div>
+            <h1>Reflection Area B: Key Challenges</h1>
+            <p class="subtitle">Building an app under pressure with evolving requirements</p>
+        </header>
+
+        <!-- Interactive Gibbs Cycle Navigator -->
+        <section class="gibbs-navigator slide-up">
+            <h2 class="section-title">
+                <span class="title-icon">🔄</span>
+                Interactive Gibbs Reflection Cycle
+            </h2>
+            <p class="section-intro">Click each stage to explore my reflection</p>
+            
+            <div class="gibbs-cycle">
+                <div class="gibbs-stage" data-stage="description" onclick="showStage('description')">
+                    <div class="stage-number">1</div>
+                    <div class="stage-name">Description</div>
+                    <div class="stage-icon">📝</div>
+                </div>
+                <div class="gibbs-stage" data-stage="feelings" onclick="showStage('feelings')">
+                    <div class="stage-number">2</div>
+                    <div class="stage-name">Feelings</div>
+                    <div class="stage-icon">💭</div>
+                </div>
+                <div class="gibbs-stage" data-stage="evaluation" onclick="showStage('evaluation')">
+                    <div class="stage-number">3</div>
+                    <div class="stage-name">Evaluation</div>
+                    <div class="stage-icon">⚖️</div>
+                </div>
+                <div class="gibbs-stage" data-stage="analysis" onclick="showStage('analysis')">
+                    <div class="stage-number">4</div>
+                    <div class="stage-name">Analysis</div>
+                    <div class="stage-icon">🔍</div>
+                </div>
+                <div class="gibbs-stage" data-stage="conclusion" onclick="showStage('conclusion')">
+                    <div class="stage-number">5</div>
+                    <div class="stage-name">Conclusion</div>
+                    <div class="stage-icon">✅</div>
+                </div>
+                <div class="gibbs-stage" data-stage="action" onclick="showStage('action')">
+                    <div class="stage-number">6</div>
+                    <div class="stage-name">Action Plan</div>
+                    <div class="stage-icon">🎯</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stage Content -->
+        <section class="stage-content">
+            <!-- Description Stage -->
+            <div id="description" class="stage-panel active">
+                <div class="card interactive-card">
+                    <div class="card-header">
+                        <h3>📝 Description: What Happened?</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="highlight-box challenge-box">
+                            <h4>🚨 The Challenge</h4>
+                            <p class="lead-text">
+                                Building a functional prototype in a <strong>tight timeline</strong> with a new team I have never worked with before (And unfortunately I am the only one who knows how to code).
+                            </p>
+                        </div>
+
+                        <p>
+                            While the majority of the team had been working together during IENT the previous semester, I joined at the start 
+                            of EP1101, which meant I was building from scratch with a new team.
+                        </p>
+
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>Weeks 1-4: Initial Concept</h4>
+                                    <p>Simple online tuition matchmaking platform</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>Week 5: CA1 Validation</h4>
+                                    <p>Revealed deeper issues: trust, transparency, accountability</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>Weeks 12-15: Evolution</h4>
+                                    <p>Added AI summaries, lesson recordings, topic-specific matching</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feature-grid">
+                            <div class="feature-box">
+                                <div class="feature-icon">🤖</div>
+                                <h4>AI-Generated Summaries</h4>
+                                <p>Required integration with <span class="code">OpenAI API</span></p>
+                            </div>
+                            <div class="feature-box">
+                                <div class="feature-icon">📹</div>
+                                <h4>Screen-Recorded Lessons</h4>
+                                <p>Required <span class="code">Access to the users' screens</span></p>
+                            </div>
+                            <div class="feature-box">
+                                <div class="feature-icon">🗄️</div>
+                                <h4>Topic-Specific Matching</h4>
+                                <p>Complex filtering & database structure</p>
+                            </div>
+                            <div class="feature-box">
+                                <div class="feature-icon">👨‍👩‍👧</div>
+                                <h4>Parent Dashboard</h4>
+                                <p>Real-time monitoring & transparency for parents</p>
+                            </div>
+                        </div>
+
+                        <div class="callout callout-warning">
+                            <strong>⏰ Time Pressure:</strong> This evolution from simple to comprehensive required 
+                            significant architectural changes during <span class="editable-inline" contenteditable="true">weeks 1-15</span>, 
+                            while maintaining the compressed timeline for CA2.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feelings Stage -->
+            <div id="feelings" class="stage-panel">
+                <div class="card interactive-card">
+                    <div class="card-header">
+                        <h3>💭 Feelings: How Did I Feel?</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="emotion-meter">
+                            <div class="emotion-item">
+                                <div class="emotion-icon excited">🚀</div>
+                                <div class="emotion-label">Excited</div>
+                                <div class="emotion-bar">
+                                    <div class="emotion-fill" style="width: 80%; background: linear-gradient(90deg, #10b981, #34d399);"></div>
+                                </div>
+                                <p class="emotion-reason">Implementing AI features that would differentiate TUTR.SG</p>
+                            </div>
+                            <div class="emotion-item">
+                                <div class="emotion-icon pressure">😰</div>
+                                <div class="emotion-label">Pressure</div>
+                                <div class="emotion-bar">
+                                    <div class="emotion-fill" style="width: 90%; background: linear-gradient(90deg, #f59e0b, #fb923c);"></div>
+                                </div>
+                                <p class="emotion-reason">Prototype was tangible evidence - it had to actually work</p>
+                            </div>
+                            <div class="emotion-item">
+                                <div class="emotion-icon frustrated">😤</div>
+                                <div class="emotion-label">Frustrated</div>
+                                <div class="emotion-bar">
+                                    <div class="emotion-fill" style="width: 60%; background: linear-gradient(90deg, #ef4444, #f87171);"></div>
+                                </div>
+                                <p class="emotion-reason">Requirements changed mid-development</p>
+                            </div>
+                            <div class="emotion-item">
+                                <div class="emotion-icon understanding">🧠</div>
+                                <div class="emotion-label">Understanding</div>
+                                <div class="emotion-bar">
+                                    <div class="emotion-fill" style="width: 85%; background: linear-gradient(90deg, #8b5cf6, #a78bfa);"></div>
+                                </div>
+                                <p class="emotion-reason">Validation should drive development, not my preferences</p>
+                            </div>
+                        </div>
+
+                        <div class="quote-box">
+                            <div class="quote-icon">"</div>
+                            <p class="quote-text">
+                                Unlike theoretical validation or pitch narrative, <strong>the prototype had to actually work</strong>. 
+                                There was no room for "we plan to implement this" during demos—features either functioned or they didn't.
+                            </p>
+                        </div>
+
+                        <div class="callout callout-info">
+                            <strong>💡 Realization:</strong> Unfortunately, this was the reality of entrepreneurship — customer validation 
+                            should drive product development, not the other way around.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Evaluation Stage -->
+            <div id="evaluation" class="stage-panel">
+                <div class="card interactive-card">
+                    <div class="card-header">
+                        <h3>⚖️ Evaluation: What Was Good & Bad?</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="eval-grid">
+                            <div class="eval-section eval-success">
+                                <h4>✅ Successes</h4>
+                                <div class="achievement-list">
+                                    <div class="achievement-item">
+                                        <span class="achievement-icon">🎯</span>
+                                        <div>
+                                            <strong>Delivered Functional Prototype</strong>
+                                            <p>Demonstrated TUTR.SG's core value proposition</p>
+                                        </div>
+                                    </div>
+                                    <div class="achievement-item">
+                                        <span class="achievement-icon">🏗️</span>
+                                        <div>
+                                            <strong>Built <span class="editable-inline" contenteditable="true">9</span> Core Features</strong>
+                                            <p>Using <span class="editable-inline" contenteditable="true">Html, Css, Javascript and MySQL</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="achievement-item">
+                                        <span class="achievement-icon">🤖</span>
+                                        <div>
+                                            <strong>AI Integration Success</strong>
+                                            <p>Integrated <span class="editable-inline" contenteditable="true">ChatGPT</span> for lesson summaries</p>
+                                        </div>
+                                    </div>
+                                    <div class="achievement-item">
+                                        <span class="achievement-icon">🗄️</span>
+                                        <div>
+                                            <strong>Database Architecture</strong>
+                                            <p>Structured for topic-level filtering & scalability</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="eval-section eval-limitations">
+                                <h4>⚠️ Limitations</h4>
+                                <div class="limitation-list">
+                                    <div class="limitation-item">
+                                        <span class="limitation-icon">📊</span>
+                                        <div>
+                                            <strong>Local Only</strong>
+                                            <p>Used <span class="editable-inline" contenteditable="true">a local storage</span> instead of an actual working domain</p>
+                                        </div>
+                                    </div>
+                                    <div class="limitation-item">
+                                        <span class="limitation-icon">🤖</span>
+                                        <div>
+                                            <strong>Limited AI</strong>
+                                            <p>Basic implementation, not production-ready</p>
+                                        </div>
+                                    </div>
+                                    <div class="limitation-item">
+                                        <span class="limitation-icon">📈</span>
+                                        <div>
+                                            <strong>Scalability Concerns</strong>
+                                            <p>Would require architectural changes for production</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="learning-moment">
+                            <div class="moment-icon">💡</div>
+                            <div class="moment-content">
+                                <h4>Critical Learning Moment</h4>
+                                <p>
+                                    I diverted <span class="editable-inline" contenteditable="true">a lot of my focus</span> on 
+                                    <span class="editable-inline" contenteditable="true">making sure pages look nice and are responsive</span> 
+                                    , which is definitely important but not as important as making the core features work.
+                                </p>
+                                <p class="moment-realization">
+                                    <strong>Realization:</strong> I approached it like a web design project
+                                    rather than an entrepreneurial tool.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Analysis Stage -->
+            <div id="analysis" class="stage-panel">
+                <div class="card interactive-card">
+                    <div class="card-header">
+                        <h3>🔍 Analysis: What Sense Can I Make?</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="highlight-box insight-box">
+                            <h4>🎯 Key Insight</h4>
+                            <p class="lead-text">
+                                Technical development in <strong>entrepreneurial contexts</strong> requires 
+                                different priorities than <strong>academic or corporate development</strong>.
+                            </p>
+                        </div>
+
+                        <div class="comparison-table">
+                            <div class="comparison-column">
+                                <h4>🎓 School Projects</h4>
+                                <ul>
+                                    <li>Code quality is paramount</li>
+                                    <li>Complete features expected</li>
+                                    <li>Technical sophistication rewarded</li>
+                                    <li>Stable requirements</li>
+                                </ul>
+                            </div>
+                            <div class="comparison-divider">
+                                <div class="divider-icon">⚡</div>
+                            </div>
+                            <div class="comparison-column">
+                                <h4>🚀 Entrepreneurship</h4>
+                                <ul>
+                                    <li>Validation is paramount</li>
+                                    <li>Minimum viable features</li>
+                                    <li>Speed & learning rewarded</li>
+                                    <li>Evolving requirements</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h4 class="subsection-title">How Validation Drove Technical Decisions:</h4>
+                        <div class="validation-flow">
+                            <div class="flow-item">
+                                <div class="flow-badge">A/B Test</div>
+                                <p class="flow-finding">Parents preferred <strong>structured AI summaries</strong></p>
+                                <div class="flow-arrow">→</div>
+                                <p class="flow-decision">Prioritized lesson summary feature over other dashboard components</p>
+                            </div>
+                            <div class="flow-item">
+                                <div class="flow-badge">A/B Test</div>
+                                <p class="flow-finding">Parents valued <strong>lesson recordings</strong> for accountability</p>
+                                <div class="flow-arrow">→</div>
+                                <p class="flow-decision">Implemented video recording despite technical complexity</p>
+                            </div>
+                            <div class="flow-item">
+                                <div class="flow-badge">Survey</div>
+                                <p class="flow-finding"><strong>67.3%</strong> preferred topic-specific tuition</p>
+                                <div class="flow-arrow">→</div>
+                                <p class="flow-decision">Redesigned matching algorithm from subject to topic-level</p>
+                            </div>
+                        </div>
+
+                        <div class="callout callout-success">
+                            <strong>🌟 Turning Point:</strong> I learned that in entrepreneurial teams, technical work 
+                            must be constantly translated into <strong>customer value</strong>, not just functionality.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conclusion Stage -->
+            <div id="conclusion" class="stage-panel">
+                <div class="card interactive-card">
+                    <div class="card-header">
+                        <h3>✅ Conclusion: What Did I Learn?</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="learning-summary">
+                            <div class="summary-item">
+                                <div class="summary-number">1</div>
+                                <div class="summary-content">
+                                    <h4>Balance Speed & Quality</h4>
+                                    <p>Technical development in entrepreneurship requires balancing execution speed with quality</p>
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-number">2</div>
+                                <div class="summary-content">
+                                    <h4>Customer Needs First</h4>
+                                    <p>Subordinate technical preferences to validated customer needs</p>
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-number">3</div>
+                                <div class="summary-content">
+                                    <h4>Build the Right Thing</h4>
+                                    <p>Being a technical co-founder isn't just about building—it's about building the right things, at the right fidelity, at the right time</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quote-box gradient-border">
+                            <div class="quote-icon">"</div>
+                            <p class="quote-text">
+                                The most valuable skill I developed wasn't a new programming language or framework—it was 
+                                the ability to <strong>prototype based on evolving requirements</strong> while 
+                                maintaining focus on what actually mattered for validation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Plan Stage -->
+            <div id="action" class="stage-panel">
+                <div class="card interactive-card">
+                    <div class="card-header">
+                        <h3>🎯 Action Plan: What Will I Do Differently?</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="section-intro">In future ventures and technical projects, I will:</p>
+                        
+                        <div class="action-list">
+                            <div class="action-item">
+                                <div class="action-checkbox" onclick="this.classList.toggle('checked')">
+                                    <div class="checkmark">✓</div>
+                                </div>
+                                <div class="action-content">
+                                    <h4>Start with Minimum Viable Features</h4>
+                                    <p>Explicitly define "what must work for validation" versus "what would be nice to have" before writing any code.</p>
+                                </div>
+                            </div>
+
+                            <div class="action-item">
+                                <div class="action-checkbox" onclick="this.classList.toggle('checked')">
+                                    <div class="checkmark">✓</div>
+                                </div>
+                                <div class="action-content">
+                                    <h4>Maintain a Technical Decision Log</h4>
+                                    <p>Document why features were prioritized, what trade-offs were made, and how validation insights influenced architecture.</p>
+                                </div>
+                            </div>
+
+                            <div class="action-item">
+                                <div class="action-checkbox" onclick="this.classList.toggle('checked')">
+                                    <div class="checkmark">✓</div>
+                                </div>
+                                <div class="action-content">
+                                    <h4>Communicate in Business Terms</h4>
+                                    <p>Rather than "I implemented the database schema," frame it as "parents can now view lesson recordings which addresses their concern of accountability etc.."</p>
+                                </div>
+                            </div>
+
+                            <div class="action-item">
+                                <div class="action-checkbox" onclick="this.classList.toggle('checked')">
+                                    <div class="checkmark">✓</div>
+                                </div>
+                                <div class="action-content">
+                                    <h4>Build for Flexibility</h4>
+                                    <p>Use modular architecture with pivot flexibility in mind. Requirements will change and I have to embrace it.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Buttons -->
+        <div class="page-nav">
+            <a href="intro.html" class="nav-btn nav-btn-secondary">
+                <span>← Introduction</span>
+            </a>
+            <a href="insights.html" class="nav-btn nav-btn-primary">
+                <span>Next: Key Insights</span>
+                <span class="arrow">→</span>
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>EP1101 Incubating Innovation (II) • AY2025/2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Gibbs Cycle Stage Switcher
+        function showStage(stageId) {
+            // Remove active class from all stages and panels
+            document.querySelectorAll('.gibbs-stage').forEach(s => s.classList.remove('active'));
+            document.querySelectorAll('.stage-panel').forEach(p => p.classList.remove('active'));
+            
+            // Add active class to selected stage and panel
+            document.querySelector(`[data-stage="${stageId}"]`).classList.add('active');
+            document.getElementById(stageId).classList.add('active');
+            
+            // Smooth scroll to content
+            document.querySelector('.stage-content').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        // Initialize with first stage
+        document.addEventListener('DOMContentLoaded', () => {
+            showStage('description');
+        });
+    </script>
+</body>
+</html>
