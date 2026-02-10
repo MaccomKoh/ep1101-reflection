@@ -1,3 +1,11 @@
+// Force proper scaling on laptops
+if (window.innerWidth >= 1024 && window.innerWidth <= 1920) {
+    const viewport = document.querySelector('meta[name="viewport"]');
+    if (viewport) {
+        viewport.setAttribute('content', 'width=device-width, initial-scale=0.5, maximum-scale=1.0, user-scalable=yes');
+    }
+}
+
 // ================================
 // MAIN JAVASCRIPT FOR INTERACTIVITY
 // ================================
