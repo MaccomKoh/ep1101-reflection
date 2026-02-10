@@ -483,7 +483,7 @@
     <script src="script.js"></script>
     <script>
         // Gibbs Cycle Stage Switcher
-        function showStage(stageId) {
+        function showStage(stageId, shouldScroll = true) {
             // Remove active class from all stages and panels
             document.querySelectorAll('.gibbs-stage').forEach(s => s.classList.remove('active'));
             document.querySelectorAll('.stage-panel').forEach(p => p.classList.remove('active'));
@@ -492,13 +492,15 @@
             document.querySelector(`[data-stage="${stageId}"]`).classList.add('active');
             document.getElementById(stageId).classList.add('active');
             
-            // Smooth scroll to content
-            document.querySelector('.stage-content').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            // Only scroll if user clicked (not on initial load)
+            if (shouldScroll) {
+                document.querySelector('.stage-content').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
         }
-
-        // Initialize with first stage
+    
+        // Initialize with first stage - but DON'T scroll!
         document.addEventListener('DOMContentLoaded', () => {
-            showStage('description');
+            showStage('description', false); // false = don't scroll
         });
     </script>
 </body>
