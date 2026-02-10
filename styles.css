@@ -2041,28 +2041,76 @@ body {
     body {
         zoom: 0.67;
     }
+    
+    /* FIX LANDING PAGE SPACING */
+    .landing-page {
+        min-height: auto !important;
+        height: auto !important;
+        padding: 3rem 0 !important;
+    }
+    
+    .landing-container {
+        padding: 2rem !important;
+    }
+    
+    /* Remove excessive spacing */
+    .hero-info {
+        margin-bottom: 2rem !important;
+    }
+    
+    .start-btn {
+        margin-bottom: 2rem !important;
+    }
+    
+    .quick-nav {
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .landing-footer {
+        margin-top: 2rem !important;
+    }
+    
+    /* Hide or minimize scroll indicator if not needed */
+    .scroll-indicator {
+        display: none;
+    }
 }
 
 /* Optional: Fine-tune for different laptop sizes */
 
-/* Bigger laptops (17-inch) - less zoom needed */
+/* Bigger laptops (17-inch) */
 @media (min-width: 1600px) and (max-width: 1920px) {
     body {
         zoom: 0.75;
     }
+    
+    .landing-page {
+        min-height: auto !important;
+        padding: 4rem 0 !important;
+    }
 }
 
-/* Medium laptops (15-16 inch) - your size! */
+/* Medium laptops (15-16 inch) */
 @media (min-width: 1366px) and (max-width: 1599px) {
     body {
         zoom: 0.67;
     }
+    
+    .landing-page {
+        min-height: auto !important;
+        padding: 3rem 0 !important;
+    }
 }
 
-/* Smaller laptops (13-14 inch) - even more zoom */
+/* Smaller laptops (13-14 inch) */
 @media (min-width: 1024px) and (max-width: 1365px) {
     body {
         zoom: 0.6;
+    }
+    
+    .landing-page {
+        min-height: auto !important;
+        padding: 2rem 0 !important;
     }
 }
 
